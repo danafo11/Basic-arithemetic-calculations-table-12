@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC ARITHEMETIC CALCULATIONS TABLE 12</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        #button {
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+
+        #buttons {
+            margin-top: 20px;
+        }
+
+        .showTable {
+            margin-left: 43%;
+        }
+
+        table, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        @media (max-width: 500px) {
+            #button, #buttons{
+                width: 120px;
+            }
+
+            #button, #buttons {
+                margin-left: 50px;
+            }
+        }
+    </style>
+</head>
+<body class="mt-2">
+    <h3 class="text-center">BASIC ARITHEMETIC CALCULATIONS TABLE 12</h3>
+    <div class="form-floating mb-3 col-lg-4 mx-auto">
+        <input type="number" class="form-control mx-sm-auto" id="yourNumber" placeholder="e.g 100">
+        <label for="floatingInput">Enter a number here</label>
+    </div>
+
+    <table id="showTable" class="showTable"></table>
+
+    <button onclick="multiply()" id="button" class="btn btn-primary rounded">Multiplication table</button>
+    <button onclick="divide()" id="buttons" class="btn btn-primary rounded">Division table</button>
+    <button onclick="add()" id="buttons" class="btn btn-primary rounded">Addition table</button>
+    <button onclick="subtract()" id="buttons" class="btn btn-primary rounded">Subtraction table</button>
+    <script src="javascript.js"></script>
+</body>
+</html>
